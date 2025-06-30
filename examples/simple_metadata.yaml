@@ -1,0 +1,37 @@
+# Simple Template Metadata Example
+# Minimal configuration for basic project customization
+
+# Basic project information
+project:
+  description: "A simple Python CLI application"
+  keywords:
+    - "python"
+    - "cli"
+  repository: "https://github.com/username/project-name"
+
+# Author details
+author:
+  name: "John Developer"
+  email: "john@example.com"
+
+# Install CLI package bundle
+packages:
+  - "cli"
+
+# Simple README customization
+readme:
+  title: "My CLI Tool"
+  description: |
+    A straightforward command-line application built with Python and Typer.
+    
+    ## Installation
+    
+    ```bash
+    uv sync
+    ```
+    
+    ## Usage
+    
+    ```bash
+    uv run my_project --help
+    ```

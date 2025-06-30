@@ -1,0 +1,89 @@
+# TUI Application Metadata Example
+# Configuration for a Textual-based terminal user interface application
+
+project:
+  description: "A beautiful terminal user interface application"
+  keywords:
+    - "python"
+    - "tui"
+    - "terminal"
+    - "textual"
+    - "console"
+  homepage: "https://github.com/username/tui-app"
+  repository: "https://github.com/username/tui-app"
+  license: "Apache-2.0"
+
+author:
+  name: "TUI Developer"
+  email: "tui@example.com"
+  github_username: "tui-dev"
+
+# Textual package includes CLI and BASE dependencies
+packages:
+  - "textual"
+
+readme:
+  title: "Beautiful TUI App"
+  subtitle: "Terminal interfaces made easy"
+  description: |
+    A modern terminal user interface built with Python and Textual framework.
+    
+    ## ✨ Features
+    
+    - **Rich Interface**: Beautiful, responsive terminal UI
+    - **Keyboard Navigation**: Full keyboard support with shortcuts
+    - **Themeable**: Custom CSS styling for terminal interfaces
+    - **Async Support**: Non-blocking operations with asyncio
+    - **Cross-Platform**: Works on Windows, macOS, and Linux
+    
+    ## 🎮 Usage
+    
+    ```bash
+    # Install dependencies
+    uv sync
+    
+    # Launch the TUI
+    uv run my_tui_app
+    
+    # Development mode with auto-reload
+    uv run textual run --dev src/my_tui_app/__main__.py:app
+    ```
+    
+    ## ⌨️ Keyboard Shortcuts
+    
+    - `Ctrl+C` or `q` - Quit application
+    - `Tab` / `Shift+Tab` - Navigate between elements
+    - `Enter` - Activate selected element
+    - `Esc` - Cancel current operation
+  
+  badges:
+    - name: "Python"
+      url: "https://img.shields.io/badge/python-3.11+-blue.svg"
+      link: "https://www.python.org/downloads/"
+    - name: "Textual"
+      url: "https://img.shields.io/badge/textual-latest-purple.svg"
+      link: "https://textual.textualize.io/"
+    - name: "License"
+      url: "https://img.shields.io/badge/license-Apache%202.0-blue.svg"
+      link: "https://www.apache.org/licenses/LICENSE-2.0"
+
+pyproject:
+  classifiers:
+    - "Development Status :: 4 - Beta"
+    - "Environment :: Console"
+    - "Intended Audience :: End Users/Desktop"
+    - "Programming Language :: Python :: 3"
+    - "Programming Language :: Python :: 3.11"
+    - "Programming Language :: Python :: 3.12"
+    - "Topic :: Terminals"
+    - "Topic :: System :: Shells"
+    - "Topic :: Multimedia :: Graphics"
+
+environment:
+  LOG_LEVEL: "INFO"
+  TEXTUAL_DEVTOOLS: "false"
+  TERM_COLORS: "256"
+
+additional_files:
+  - "src/{project_name}/tui/styles.tcss"
+  - "config/themes.yaml"

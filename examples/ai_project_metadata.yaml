@@ -1,0 +1,134 @@
+# Template Metadata Example - AI Project
+# This file demonstrates how to customize project creation with metadata
+
+# Project metadata - used in pyproject.toml and README
+project:
+  description: "A modern Python AI application with CLI and TUI interfaces"
+  keywords:
+    - "python"
+    - "ai"
+    - "machine-learning"
+    - "cli"
+    - "tui"
+    - "llm"
+  homepage: "https://github.com/your-username/my-ai-project"
+  repository: "https://github.com/your-username/my-ai-project"
+  documentation: "https://github.com/your-username/my-ai-project/blob/main/README.md"
+  issues: "https://github.com/your-username/my-ai-project/issues"
+  license: "MIT"
+
+# Author information - used in pyproject.toml
+author:
+  name: "Your Name"
+  email: "your.email@example.com"
+  github_username: "your-username"
+
+# Maintainer information (optional - defaults to author if not specified)
+maintainer:
+  name: "Your Name"
+  email: "your.email@example.com"
+
+# Required packages - automatically installed during project creation
+# Can include both predefined package bundles and custom packages
+packages:
+  - "par-ai-core"      # AI utilities and LLM integration
+  - "textual"          # TUI framework (includes CLI dependencies)
+  - "httpx"            # Modern HTTP client
+  - "pydantic-ai"      # AI framework with type safety
+
+# README customization - generates enhanced README content
+readme:
+  title: "My AI Project"
+  subtitle: "Intelligent automation with modern Python"
+  description: |
+    A comprehensive AI-powered application built with modern Python tools and frameworks.
+    
+    ## 🚀 Features
+    
+    - **AI Integration**: Powered by state-of-the-art language models
+    - **Dual Interface**: Both CLI and TUI interfaces for flexibility
+    - **Type Safety**: Full type annotations with Pydantic validation
+    - **Modern Architecture**: Async/await, structured logging, and configuration management
+    - **Developer Experience**: Rich console output, comprehensive error handling
+    
+    ## 🛠️ Tech Stack
+    
+    - **AI**: PAR AI Core, Pydantic AI
+    - **Interface**: Typer (CLI), Textual (TUI)
+    - **HTTP**: HTTPX with async support
+    - **Data**: Pydantic for validation and serialization
+    - **Logging**: Rich integration with structured output
+    
+    ## 🚀 Quick Start
+    
+    ```bash
+    # Install dependencies
+    uv sync
+    
+    # Run the CLI
+    uv run my_project --help
+    
+    # Launch the TUI
+    uv run my_project --tui
+    
+    # Run with debug logging
+    uv run my_project --log-level debug
+    ```
+    
+    ## 📋 Configuration
+    
+    The application uses environment variables for configuration:
+    
+    ```bash
+    # Copy the example environment file
+    cp .env.example .env
+    
+    # Edit with your settings
+    nano .env
+    ```
+  
+  # GitHub-style badges for the README
+  badges:
+    - name: "Python"
+      url: "https://img.shields.io/badge/python-3.11+-blue.svg"
+      link: "https://www.python.org/downloads/"
+    - name: "License"
+      url: "https://img.shields.io/badge/license-MIT-green.svg"
+      link: "https://opensource.org/licenses/MIT"
+    - name: "Code Style"
+      url: "https://img.shields.io/badge/code%20style-black-000000.svg"
+      link: "https://github.com/psf/black"
+    - name: "Type Checking"
+      url: "https://img.shields.io/badge/type%20checking-pyright-blue.svg"
+      link: "https://github.com/microsoft/pyright"
+
+# pyproject.toml customization - additional classifiers
+pyproject:
+  classifiers:
+    - "Development Status :: 4 - Beta"
+    - "Intended Audience :: Developers"
+    - "Programming Language :: Python :: 3"
+    - "Programming Language :: Python :: 3.11"
+    - "Programming Language :: Python :: 3.12"
+    - "Topic :: Scientific/Engineering :: Artificial Intelligence"
+    - "Topic :: Software Development :: Libraries :: Python Modules"
+    - "Topic :: System :: Shells"
+    - "Topic :: Terminals"
+    - "Topic :: Utilities"
+
+# Environment variables to add to .env file
+environment:
+  LOG_LEVEL: "INFO"
+  DEBUG: "false"
+  API_TIMEOUT: "30"
+  MAX_RETRIES: "3"
+  OPENAI_API_KEY: "your-openai-api-key-here"
+  ANTHROPIC_API_KEY: "your-anthropic-api-key-here"
+
+# Additional files to process (beyond the default patterns)
+# Useful for custom configuration files or documentation
+additional_files:
+  - "config/settings.yaml"
+  - "docs/api.md"
+  - "scripts/deploy.sh"
+  - "docker-compose.yml"
